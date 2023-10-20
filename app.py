@@ -34,9 +34,9 @@ def student(id):
 @app.route('/student/add',methods=['POST'])
 def student_add():
     
-    if(request.json['name'] and request.json['id'] and request.json['grade']):
+    if(request.json['name'] and request.json['grade']):
         # code here
-        if(request.json['name'] !='' and request.json['id'] != '' and request.json['grade'] != ''):
+        if(request.json['name'] !='' and request.json['grade'] != ''):
     
             name = request.json['name']
             
